@@ -26,9 +26,9 @@
   /* crear una tabla*/
 $connection = new SQLite3('estudiantes.db');
 /*me conecto a la tabla*/
-if (!$connection)
+if (!$connection){
   die("No se pudo conectar")
-
+}
 /*la creo si es que no hay tabla*/
 $connection->exec(
   'CREATE TABLE IF NO EXISTS usuario(
@@ -43,8 +43,8 @@ $connection->exec(
 $query = "INSERT INTO usuario (nombre,apellido,edad,carrera) VALUES ('$nombre','$apellido','$edad','$carrera')";
 
 $resultado = $connection->exec($query);
-if(!$resultado)
+if(!$resultado){
   echo"Se guardo correctamente!";
-
+}
 
 ?>
