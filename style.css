@@ -1,0 +1,32 @@
+#formulario{
+  display: grid;
+  width: 40%;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px #cccccc;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+input, select{
+  width:30%;
+}
+label{
+  
+}
+
+button{
+  width: 30%;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+label, select, input{
+  margin: auto;
+}
