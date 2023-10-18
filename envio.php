@@ -22,8 +22,9 @@
 
   echo "</div>";
   echo "<a href=\"index.php\"> Volver a inicio </a>";
+
   /* crear una tabla*/
-$connection = new SQLite3("estudiantes.db");
+$connection = new SQLite3('estudiantes.db');
 /*me conecto a la tabla*/
 if (!$connection){
   die("No se pudo conectar")
