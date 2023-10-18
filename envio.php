@@ -22,4 +22,7 @@
 
   echo "</div>";
   echo "<a href=\"index.php\"> Volver a inicio </a>";
+
+$connection = new SQLite3("estudiantes.db");
+
 ?>
